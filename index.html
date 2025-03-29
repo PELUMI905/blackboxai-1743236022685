@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Attendance Sheet</h1>
+        <div class="date-controls">
+            <p>Current Date: <span id="current-date"></span></p>
+            <div class="date-picker">
+                <label for="date-input">Change Date:</label>
+                <input type="date" id="date-input">
+                <button id="change-date-btn">Update Date</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <table id="attendance-table">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Present</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Student rows will be added here -->
+            </tbody>
+        </table>
+        <div class="student-controls">
+            <input type="text" id="new-student" placeholder="Student name">
+            <button id="add-student-btn">Add Student</button>
+        </div>
+        <div class="action-buttons">
+            <button id="save-btn">Save Attendance</button>
+            <button id="export-btn">Export to Excel</button>
+            <button id="import-btn">Import Attendance</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Attendance Tracker</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
